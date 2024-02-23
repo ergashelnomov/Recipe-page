@@ -23,7 +23,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 123px 0;
+  padding: 123px 20px;
   width: 100%;
   background: $eggshell;
   .container {
@@ -181,7 +181,7 @@ h2 {
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .wrapper {
     padding: 0;
     .container {

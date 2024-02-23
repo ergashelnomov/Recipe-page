@@ -32,7 +32,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 123px 0;
+  padding: 123px 20px;
   width: 100%;
   background: #f3e5d7;
 }
@@ -174,7 +174,7 @@ h2 {
   border-bottom: 1px solid #e3ddd7;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .wrapper {
     padding: 0;
   }
