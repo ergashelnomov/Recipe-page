@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+@import "./varebles";
+@import "./reset";
+
+body {
+  font-family: $font-family, $second-family;
+}
+
+h2 {
+  font-family: $second-family;
+  font-weight: $font-w-s;
+  font-size: 28px;
+  line-height: 100%;
+  color: $brandy-red;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 123px 0;
+  width: 100%;
+  background: $eggshell;
+  .container {
+    max-width: 736px;
+    background: $white;
+    border-radius: 24px;
+    padding: 40px;
+    margin: 0 auto;
+    @extend .flex;
+    gap: 32px;
+    .about-section {
+      @extend .flex;
+      gap: 40px;
+      .discription {
+        @extend .flex;
+        gap: 24px;
+        h1 {
+          font-family: $second-family;
+          font-weight: $font-w-s;
+          font-size: 40px;
+          line-height: 100%;
+          color: $dark-charcoal;
+        }
+        p {
+          font-family: $font-family;
+          font-weight: $font-w-s;
+          font-size: 16px;
+          line-height: 150%;
+          color: $wenge-brown;
+        }
+      }
+    }
+    .info-section {
+      @extend .flex;
+      gap: 32px;
+
+      .preparation-box {
+        border-radius: 12px;
+        padding: 28px;
+        height: 180px;
+        background: $snow;
+        @extend .flex;
+        gap: 16px;
+        p {
+          font-family: $font-family;
+          font-weight: $font-w-n;
+          font-size: 20px;
+          line-height: 100%;
+          color: $dark-raspberry;
+        }
+        ul {
+          @extend .flex;
+          gap: 8px;
+          padding-left: 20px;
+          li {
+            font-family: $font-family;
+            font-weight: $font-w-b;
+            font-size: 16px;
+            line-height: 150%;
+            color: $wenge-brown;
+            span {
+              font-weight: $font-w-s;
+            }
+          }
+        }
+      }
+      .info-ingredients {
+        @extend .flex;
+        gap: 24px;
+        border-bottom: 1px solid $white-coffee;
+        padding-bottom: 32px;
+        ul {
+          @extend .flex;
+          gap: 8px;
+          padding-left: 20px;
+          li {
+            font-family: $font-family;
+            font-weight: $font-w-s;
+            font-size: 16px;
+            line-height: 150%;
+            color: $wenge-brown;
+          }
+        }
+      }
+      .info-instructions {
+        @extend .flex;
+        gap: 24px;
+        border-bottom: 1px solid $white-coffee;
+        padding-bottom: 32px;
+        ul {
+          padding-left: 20px;
+          ol {
+            @extend .flex;
+            gap: 8px;
+            li {
+              &::marker {
+                font-family: $font-family;
+                font-weight: $font-w-b;
+                font-size: 16px;
+                line-height: 150%;
+                color: $brandy-red;
+              }
+              span {
+                font-weight: $font-w-b;
+              }
+              font-family: $font-family;
+              font-weight: $font-w-s;
+              font-size: 16px;
+              line-height: 150%;
+              color: $wenge-brown;
+            }
+          }
+        }
+      }
+      .info-nutrition {
+        @extend .flex;
+        gap: 24px;
+        p {
+          font-family: $font-family;
+          font-weight: $font-w-s;
+          font-size: 16px;
+          line-height: 150%;
+          color: $wenge-brown;
+        }
+        .table {
+          background: transparent;
+          border-spacing: 0;
+          width: 100%;
+          tr {
+            td:nth-child(1) {
+              font-family: $font-family;
+              font-weight: $font-w-s;
+              font-size: 16px;
+              line-height: 150%;
+              color: $wenge-brown;
+            }
+            td:nth-child(2) {
+              font-family: $font-family;
+              font-weight: $font-w-b;
+              font-size: 16px;
+              line-height: 150%;
+
+              color: $brandy-red;
+            }
+          }
+          .table-row {
+            td {
+              padding: 12px 0;
+              height: 24px;
+              border-bottom: 1px solid $white-coffee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 0;
+    .container {
+      border-radius: 0;
+      padding: 0;
+      .about-section {
+        .discription {
+          padding: 40px 32px 0 32px;
+          h1 {
+            font-size: 36px;
+          }
+        }
+      }
+      .info-section {
+        padding: 0 32px 40px 32px;
+      }
+    }
+  }
+}
