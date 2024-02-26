@@ -47,6 +47,9 @@ h2 {
 .wrapper .container .about-section {
   gap: 40px;
 }
+.wrapper .container .about-section img {
+  border-radius: 12px;
+}
 .wrapper .container .about-section .discription {
   gap: 24px;
 }
@@ -154,6 +157,9 @@ h2 {
   border-spacing: 0;
   width: 100%;
 }
+.wrapper .container .info-section .info-nutrition .table tr td {
+  padding: 12px 0 12px 32px;
+}
 .wrapper .container .info-section .info-nutrition .table tr td:nth-child(1) {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -169,7 +175,6 @@ h2 {
   color: #854632;
 }
 .wrapper .container .info-section .info-nutrition .table .table-row td {
-  padding: 12px 0;
   height: 24px;
   border-bottom: 1px solid #e3ddd7;
 }
@@ -182,8 +187,11 @@ h2 {
     border-radius: 0;
     padding: 0;
   }
+  .wrapper .container .about-section img {
+    border-radius: 0;
+  }
   .wrapper .container .about-section .discription {
-    padding: 40px 32px 0 32px;
+    padding: 0 32px 0 32px;
   }
   .wrapper .container .about-section .discription h1 {
     font-size: 36px;
